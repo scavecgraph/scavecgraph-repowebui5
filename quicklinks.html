@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QUICK LINKS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function openLink(file, source){
+                var fullUrl = window.location.href;
+                var url = fullUrl.substring(0, fullUrl.lastIndexOf("/") + 1);
+                if(source){
+                    url = "view-source:" + url.replace("http://","");
+                }
+                var fileUrl = url + file;
+                document.getElementById("link").value = fileUrl;
+            }            
+        </script>
+        <div>Quick Links for F5 refresh of resources in android chrome browser</div>
+        <input id="link" type="text" onclick="this.select();" style="width:500px;"/>
+        <p><a href='consoleChannelUI.html' target="_blank">consoleChannelUI.html</a> (<a href="javascript:openLink('consoleChannelUI.html', true);">source</a>)</p>
+        <p><a href='consoleChannel.css' target="_blank">consoleChannel.css</a> (<a href="javascript:openLink('consoleChannel.css', true);">source</a>)</p>
+        <p><a href='consoleChannel.js' target="_blank">consoleChannel.js</a> (<a href="javascript:openLink('consoleChannel.js', true);">source</a>)</p>
+
+        <p><a href='consoleChannelSearchUI.html' target="_blank">consoleChannelSearchUI.html</a> (<a href="javascript:openLink('consoleChannelSearchUI.html', true);">source</a>)</p>
+        <p><a href='consoleChannelSearch.js' target="_blank">consoleChannelSearch.js</a> (<a href="javascript:openLink('consoleChannelSearch.js', true);">source</a>)</p>
+        
+        <p><a href='consoleContextUI.html' target="_blank">consoleContextUI.html</a> (<a href="javascript:openLink('consoleContextUI.html', true);">source</a>)</p>
+        <p><a href='consoleContext.css' target="_blank">consoleContext.css</a> (<a href="javascript:openLink('consoleContext.css', true);">source</a>)</p>
+        <p><a href='consoleContext.js' target="_blank">consoleContext.js</a> (<a href="javascript:openLink('consoleContext.js', true);">source</a>)</p>
+        
+        <p><a href='consoleSymbologyUI.html' target="_blank">consoleSymbologyUI.html</a> (<a href="javascript:openLink('consoleSymbologyUI.html', true);">source</a>)</p>
+        <p><a href='consoleSymbology.css' target="_blank">consoleSymbology.css</a> (<a href="javascript:openLink('consoleSymbology.css', true);">source</a>)</p>
+        <p><a href='consoleSymbology.js' target="_blank">consoleSymbology.js</a> (<a href="javascript:openLink('consoleSymbology.js', true);">source</a>)</p>
+        
+        <p><a href='consoleSymbolUI.html' target="_blank">consoleSymbolUI.html</a> (<a href="javascript:openLink('consoleSymbolUI.html', true);">source</a>)</p>
+        <p><a href='consoleSymbol.css' target="_blank">consoleSymbol.css</a> (<a href="javascript:openLink('consoleSymbol.css', true);">source</a>)</p>
+        <p><a href='consoleSymbol.js' target="_blank">consoleSymbol.js</a> (<a href="javascript:openLink('consoleSymbol.js', true);">source</a>)</p>
+
+        <p><a href='consoleViewportUI.html' target="_blank">consoleViewportUI.html</a> (<a href="javascript:openLink('consoleViewportUI.html', true);">source</a>)</p>
+        <p><a href='consoleViewport.css' target="_blank">consoleViewport.css</a> (<a href="javascript:openLink('consoleViewport.css', true);">source</a>)</p>
+        <p><a href='consoleViewport.js' target="_blank">consoleViewport.js</a> (<a href="javascript:openLink('consoleViewport.js', true);">source</a>)</p>
+    </body>
+</html>
